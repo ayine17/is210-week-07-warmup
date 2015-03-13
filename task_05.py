@@ -20,13 +20,10 @@ def flip_keys(to_flip):
         [(3, 2, 1), 'olleh']
     """
     counter = 0
-    new = []
     for values in to_flip:
 
-        if counter < len(to_flip):
-            new.append(values[::-1])
+        to_flip[counter] = values[::-1]
 
         counter += 1
 
-    # new = [v[::-1] for v in to_flip]
-    return new
+    return to_flip
